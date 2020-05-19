@@ -1,9 +1,20 @@
 // // Back End Logic
 // var inputNumbers = []
+// var weirdNumbers = [];
+//   inputNumbers.forEach(function(inputNumber) {
+//     weirdNumbers.push(inputNumber)
+//   });
+
 // var robogersArray = inputNumbers.slice("");
 
 
-var numbers = parseInt($("input#number").val()); 
+function userArray (numberStop) { 
+  var numbers = [];
+  for (let index = 0; index <= numberStop; index += 1) {
+    numbers.push(index);
+  }
+  return numbers;
+}
 
 
 
@@ -13,9 +24,11 @@ var numbers = parseInt($("input#number").val());
 $(document).ready(function() {
     $("form#neighbor").submit(function(event) {
     event.preventDefault();
-      $("#output").show(numbers);
-      $("#output").text(numbers);
+
+    var numberStop = parseInt($("input#number").val()); 
+      $("#outputPhrase").show();
+      $("#outputNumbers").text(numberStop);
      
     });
-
+    
 });
