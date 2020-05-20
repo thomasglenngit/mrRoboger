@@ -1,28 +1,20 @@
-// // Back End Logic
-// var inputNumbers = []
-// var weirdNumbers = [];
-//   inputNumbers.forEach(function(inputNumber) {
-//     weirdNumbers.push(inputNumber)
-//   });
-
-// var robogersArray = inputNumbers.slice("");
-
-
+// Back End Logic
 function userArray (numberStop) { 
   var numbers = [];
   for (let index = 0; index <= numberStop; index += 1) {
-    //but with better conditions...
+    var words = index.toString();
 
-    if (index === 3) {
+    if (words.includes(3)) {
       numbers.push("Won't you be my neighbor?");
-    } else if (index === 2){
+    } else if (words.includes(2)) {
       numbers.push("Boop");
-    } else if (index === 1) {
+    } else if (words.includes(1)) {
       numbers.push("Beep");
     } else {
-      numbers.push(index);
+      numbers.push(words);
     }
     console.log("This is the index for every loop: " +index);
+    // numbers.push(index);
   }
   return numbers;
 }
@@ -32,7 +24,7 @@ function userArray (numberStop) {
 $(document).ready(function() {
     $("form#neighbor").submit(function(event) {
     event.preventDefault();
-    var numberStop = parseInt($("input#number").val()); 
+    var numberStop = ($("input#number").val()); 
     var result = userArray(numberStop);
       $("#outputPhrase").show();
       $("#outputNumbers").text(result);
