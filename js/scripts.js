@@ -11,12 +11,21 @@
 function userArray (numberStop) { 
   var numbers = [];
   for (let index = 0; index <= numberStop; index += 1) {
-    numbers.push(index);
+    //but with better conditions...
+
+    if (index === 3) {
+      numbers.push("Won't you be my neighbor?");
+    } else if (index === 2){
+      numbers.push("Boop");
+    } else if (index === 1) {
+      numbers.push("Beep");
+    } else {
+      numbers.push(index);
+    }
     console.log("This is the index for every loop: " +index);
   }
   return numbers;
 }
-
 
 
 // User Interface Logic
