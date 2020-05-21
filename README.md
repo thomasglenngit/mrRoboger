@@ -1,7 +1,7 @@
 
 # Mr. Roboger's Neighborhood
 
-#### This is a website that returns a custom array from a user's input. 5.20.2020_
+#### This is a website that returns a custom array from a user's input. 5.20.2020
 
 #### by _**Thomas Glenn**_
 
@@ -12,24 +12,24 @@ _This is my third code review through <em>Epicodus</em>. "Mr. Roboger" produces 
 ## Specifications:
 
 * Spec 1: The program will return one number	
-    -Input: "10023"	
-    -Output: "10023"
+    * Input: "10023"	
+    * Output: "10023"
 
 * Spec 2: The program will return an array of numbers	
-    -Input: "1,3,6,23,687"
-    -Output: "1,3,6,23,687"
+    * Input: "1,3,6,23,687"
+    * Output: "1,3,6,23,687"
 
 * Spec 3: The program returns an array of numbers from 0 to the user's inputted number (including multi-digit numbers).	
-    -Input: "4"	
-    -Ouput: "0,1,2,3,4"	
+    * Input: "4"	
+    * Output: "0,1,2,3,4"	
 
 * Spec 4: The program will identify and replace all numbers containing "3", "2", and "1" with "Won't you be my neighbor?", "Boop", and "Beep" respectively and in descending order of hierarchy.
-    -Input: "12"
-    -Output: "0,Beep,Boop,Won't you be my neighbor?,4,5,6,7,8,9,Beep,Beep,Boop"
+    * Input: "12"
+    * Output: "0,Beep,Boop,Won't you be my neighbor?,4,5,6,7,8,9,Beep,Beep,Boop"
 
 * Spec 5: The program will identify all other numbers	and return them as inputted.	
-    -Input: "5"
-    -Output: "0,Beep,Boop,Won't you be my neighbor?,4,5"
+    * Input: "5"
+    * Output: "0,Beep,Boop,Won't you be my neighbor?,4,5"
 
 ## Setup/Installation Requirements
 
