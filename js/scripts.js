@@ -14,7 +14,6 @@ function userArray (numberStop) {
       numbers.push(words);
     }
     console.log("This is the index for every loop: " +index);
-    // numbers.push(index);
   }
   return numbers;
 }
